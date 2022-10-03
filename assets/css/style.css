@@ -1,1 +1,155 @@
-*{background-color:black;}
+
+
+* {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+* ul{
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+header {
+    height: 590px;
+    max-height: 590px;
+    background-image: url("../img/header_background.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+
+}
+
+.colorThemeBackground {
+    background: linear-gradient(270deg, #1243EF 16.74%, rgba(64, 1, 132, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.headerContent {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+
+}
+
+.logoH1 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h1_topo {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.h1_topo h1 {
+    color: white;
+}
+
+.logo_topo_wh {
+    margin: 0;
+}
+
+.logo_topo_wh img {
+    height: 171px;
+}
+
+.contact_Container {
+    margin-top: 130px;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 5px;
+    border-bottom: 12px #400184 solid;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact_Container_2 {
+    margin: 72px 65px 0px 72px;
+}
+
+.contact_Container_table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact_Container_table_row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.contact_Container_table_col {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 5px;
+    padding-right: 5px;
+    flex-direction: row;
+    width: 50%;
+
+}
+.contato_dados{
+    display: flex;
+    flex-direction: column;
+
+}
+.contato_logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.contato_logo img{
+    
+    width:32px;
+}
+
+.contato_nome{
+    padding: 0px 0px 0px 10px;
+    font-weight:800;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contato_info
+{
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+}
+.contato_info ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.contato_info ul li:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 900px) {
+    .contact_Container_table_row {
+        flex-wrap: wrap;
+    }
+}
